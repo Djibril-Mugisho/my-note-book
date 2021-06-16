@@ -1,0 +1,710 @@
+ *
+{
+    margin: 0px;
+    padding: 0px;
+
+}
+
+#backdrop
+{
+height: 100vh;
+width: 100%;
+ background: rgba(3,3,3, 0.2);
+position: fixed;
+z-index: 10;
+display: none;
+}
+
+#backdrop.visible
+{
+    display: block;
+}
+
+#ackgdrop-two
+{
+    height: 100vh;
+width: 100%;
+ background: transparent;
+position: fixed;
+z-index: 10;
+display: none;
+}
+
+#ackgdrop-two.visible
+{
+    display: block;
+}
+
+#backdrop_3
+{
+    height: 100vh;
+    width: 100%;
+     background: rgb(0,0,0, 0.8);
+    position: fixed;
+    z-index: 10;
+    display: none; 
+}#backdrop_3.visible
+{
+    display: block;
+}
+
+.note-header
+{
+width: 100%;
+height: 90px;
+background: linear-gradient(#ff8000,#aa6623);
+display: inline-block;
+border-bottom:1px solid #cccc;
+}
+
+.header-container
+{
+
+margin:10px auto;
+padding: 0px 20px;
+display: flex;
+justify-content: space-between;
+max-width: 1400px;
+}
+
+#MENU-BOX
+{
+    width: 600px;
+    height: 500px;
+    position: fixed;
+    left: 70vw;
+    background: linear-gradient(#aa6623,#aa6623,#aa6623,#aa6623,#ff8000, transparent) ;
+    border-left: 3px solid white;
+ animation:slidInFromLeft 0.3s ease-in ;
+display: none;
+z-index: 10;
+}
+
+#MENU-BOX.visible
+{
+    display: block;
+}
+
+
+.contact-icon  
+{
+    width: 330px;
+    position:relative;
+ background-color: black;
+    top: 50%;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 50px;
+    border: 2px solid #ffff;
+  padding: 10px 0px;
+  border-left: 2px solid black;
+
+}
+
+.contact-icon img
+{
+    max-width: 40px;
+    padding: 20px 20px;
+    cursor: pointer;
+}
+
+#MENU-BOX h1
+{
+    padding: 5px 10px;
+    font-family: sans-serif;
+    color: #ffff;
+    font-weight: 100;
+    cursor: pointer;
+    border-bottom: 2px solid #ffff;
+}
+
+.header-container img
+{
+    width: 70px;
+    justify-content: space-between;
+    padding: 0px 10px;
+    cursor: pointer;
+}
+
+.header-container h1
+{
+color: #ffff;
+font-family: 'ubuntu';
+font-weight: 100;
+font-size: 55px;
+padding-top: 4px;
+}
+
+.button
+{
+width: 100px;
+margin:40px auto;
+border-radius: 500px;
+height: 100px;
+border: 4px solid #ffff;
+}
+
+.switch
+{
+width: 60px;
+margin: auto;
+padding: 20px 30px;
+transition: 0.2s ease-in;
+}
+
+.switch:hover
+{
+    transform: rotate(-60deg);
+    cursor: pointer;
+}
+
+
+#input-box
+{
+width: 60%;
+height: 650px;
+background-color: red;
+padding: 10px 10px;
+position: fixed; 
+/* background: linear-gradient(#000,#000,#000,#000,#000, transparent); */
+background: rgb(0,0,0, 0.8);
+animation:solidInFromTop 0.2s ease-in-out ;
+border-radius: 4px;
+margin-left: 20px;
+z-index: 100;
+display: none;
+}
+
+#input-box.visibility
+{
+    display: block;
+}
+
+
+.container-input
+{
+display: flex;
+flex-direction: column;
+padding: 10px 20px;
+
+
+
+}
+.container-input label
+{
+    display: block;
+    margin: 10px 10px;
+    font-family: 'calibri',sans-serif;
+    color: white;
+    font-size: 19px;
+}
+
+.container-input input
+{
+    background: transparent;
+    margin: 10px 10px;
+    padding: 10px 20px;
+    width: 80%;
+    border: 2px solid white;
+    color: #ffff;
+    font-size: 19px;
+}
+
+.container-input input:focus
+{
+outline: none;
+}
+
+.container-input textarea
+{
+    border: 2px solid white;
+    margin: 10px 10px;
+    width: 95%;
+    width:90%;
+    height: 220px;
+    padding: 10px 20px;
+    background: transparent;
+    color: #ffff;
+    font-size: 19px;
+    border-radius: 4px;
+}
+
+.container-input textarea:focus
+{
+    outline: none;
+}
+
+.button-container
+{
+    margin: 10px 10px;
+    display: flex;
+    width:95%;
+justify-content: space-between;
+}
+
+.button-container button
+{
+    width: 100px;
+    padding: 10px 30px;
+ background: linear-gradient(#ff8000,#aa6623);
+    border-color: transparent;
+    color: #fff;
+    font-size: 17px;
+    border: 1px;
+    text-align: center;
+    border-radius: 2px;
+     cursor: pointer;
+   
+   
+}
+
+.button-container button:hover
+{
+transform: scale(1.10);
+/* border:1px  solid #ffe994; */
+}
+
+
+.button-container button:focus
+{
+    outline: transparent;
+}
+
+
+#trash-container
+{
+    width: 100px;
+    margin:40px auto;
+    border-radius: 500px;
+    height: 100px;
+    border: 4px solid #ffff;
+    display: none;
+  
+}
+#trash-container.visible
+{
+    display: block;
+}
+
+
+#trash-container.visible
+{
+    display: block;
+}
+
+#trash-container img
+{
+    width: 40px;
+margin: auto;
+padding: 20px 30px;
+transition: 0.2s ease-i;
+cursor:pointer;
+}
+
+#note-container
+{
+max-width: 1300px;
+margin:29px auto;
+display: none;
+}
+
+#note-container.visible
+{
+    display: block;
+}
+
+
+
+.hrLine
+{
+   max-width: 1000px;
+   padding: 1px ;
+   margin: auto;
+   background:linear-gradient(#ff8000,#aa6623);;
+}
+
+
+
+.inputdate
+{
+    max-width: 200px;
+    background: white;
+    
+}
+
+.inputdate:focus
+{
+    outline: none;
+}
+
+
+/* notevisibiltystyling*/
+
+
+.note-box
+{
+width: 70%;
+box-shadow: 0px 0px  4px  #111;
+margin:30px auto;
+border-radius:6px ;
+display: flex;
+}
+
+
+.image-palce
+{
+width: 220px;
+background:linear-gradient(#ff8000,#aa6623);
+border-top-left-radius: 5px;
+/* overflow: hidden;
+position: relative; */
+border-bottom-left-radius: 5px;
+}
+
+.image-palce img
+{
+    width: 100px;
+    margin: 100px 50px;
+
+}
+
+.text-place 
+{
+    position: relative;
+}
+
+.text-place h3
+{
+    text-align: justify;
+    padding: 3px 6px;
+    color: #ff8000;
+    font-family: sans-serif;
+    font-family: sans-serif;
+}
+
+.text-place p
+{
+    text-align: justify;
+    padding: 3px;
+    color: #103154;
+    font-family: sans-serif;
+    font-size: 19px;
+}
+.text-place  h4
+{
+    padding: 100px 7px;
+    position: relative;
+    top: 60px;
+     color: #ff8000;
+     font-family: sans-serif;
+}
+
+#deltion_question
+{
+    width: 35%;
+    height: 300px;
+    border-radius: 7px;
+    box-shadow: 0 0  3px #000;
+    z-index: 10;
+    display: none;
+    background-color: #ffff;
+    position: absolute;
+    left: 30%;
+    top: 100px;
+    animation:  slidInFromTop.3s ease-in-out;
+
+}
+#deltion_question.visible
+{
+    display: block;
+}
+
+
+#deltion_question h3
+{
+    width: 300px;
+    text-align: center;
+padding-top: 20px;
+margin: auto;
+font-family: sans-serif;
+font-weight: 100;
+}
+
+.button-execution-container 
+{
+display: flex;
+margin:50px auto ;
+width: 200px;
+border: 1px solid white;
+gap: 50px;
+}
+
+.decoration
+{
+    text-align: center;
+    width: 100%;
+    height: 80px;
+    background: linear-gradient(#ff8000,#aa6623);
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.decoration h2
+{
+    color: #fff;
+    font-family: sans-serif;
+    padding-top: 20px;
+}
+
+.button-execution-container  button
+{
+padding:10px 25px;
+margin-bottom: 40px;
+border-radius: 3px;
+border: 1px solid transparent;
+background: linear-gradient(#ff8000,#aa6623);
+color: #fff;
+cursor: pointer;
+}
+.button-execution-container  button:focus
+{
+    outline: transparent;
+}
+
+
+
+
+
+/*all aniamtion*/
+
+
+@keyframes slidInFromTop
+{
+    0%{
+      transform: translatex(50%);
+    }
+
+    100%{
+        transform: translatex((0%));
+    }
+}
+
+
+@keyframes slidInFromLeft {
+    0%
+    {
+        transform: translate(100%);
+    }
+    
+    100%
+    {
+        transform: translate(0%);
+    }
+    
+    }
+    
+
+    @keyframes solidInFromTop{
+        0%
+        {
+            transform: translatey(40%);
+        }
+    
+        100%
+        {
+            transform: translatey(0%);
+        }
+    }
+    
+    
+    
+    /*css media screen*/
+
+
+ @media screen and (max-width: 1142px){
+
+    #MENU-BOX{
+
+   
+    height: 500px;
+    position: fixed;
+    left: 55vw;
+    }
+
+
+    .header-container h1
+{
+
+font-weight: 200;
+font-size: 40px;
+padding-top: 7px;
+}
+
+.header-container img
+{
+
+
+width: 60px;
+}
+ }
+
+
+ @media screen and (max-width: 764px){
+
+    #MENU-BOX{
+
+   
+    height: 700px;
+    position: fixed;
+    left: 40vw; 
+    }
+
+    .contact-icon  
+    {
+        width: 260px;
+      padding: 5px 0px;
+height: 80px;
+    }
+
+
+    .header-container
+    {
+    
+   
+    padding: 0px 10px;
+    max-width: 1600px;
+    }
+
+
+    #input-box
+{
+width: 90%;
+height: 600px;
+/* background: linear-gradient(#000,#000,#000,#000,#000, transparent); */
+margin-left: 10px;
+
+}
+
+.container-input
+{
+
+flex-wrap: wrap;
+}
+
+
+.container-input textarea
+{
+    border: 2px solid white;
+    margin: 10px 10px;
+    width: 90%;
+    height: 210px;
+
+}
+
+.container-input :nth-child(2)
+{
+    padding: 5px 0px;
+}
+
+#note-container
+{
+max-width: 2000px;
+margin: auto;
+display: none;
+}
+
+.note-box
+{
+width: 95%;
+margin:30px auto;
+border-radius:6px ;
+display: flex;
+}
+
+.image-palce
+{
+width: 160px;
+background:linear-gradient(#ff8000,#aa6623);
+}
+
+.image-palce img
+{
+    width: 70px;
+    margin: 100px 50px;
+}
+
+
+#deltion_question
+{
+    width: 60%;
+    left: 20%;
+ 
+
+}
+
+ }
+
+
+ @media screen and (max-width: 462px){
+
+    #MENU-BOX{
+
+   
+    height: 700px;
+    position: fixed;
+    left: 25vw; 
+    }
+
+    .contact-icon  
+    {
+        width: 260px;
+      padding: 5px 0px;
+height: 80px;
+    }
+
+
+
+    .header-container h1
+{
+
+font-weight: 200;
+font-size: 30px;
+padding: 2px 0px;
+}
+
+.note-header
+{
+    height: 60px;
+}
+
+.header-container img
+ {
+width: 50px;
+
+}
+
+ }
+
+
+
+ /*about page styling*/
+
+ #about-page
+ {
+background-image: url("pexels-photo-241316.jpeg");
+ }
+
+ .showcase
+ {
+     background:linear-gradient(#aa6623,#aa6623,#aa6623,#aa6623,#aa6623,#aa6623,#aa6623);
+    display: inline-block;
+    width: 100%;
+    height: 400px;
+ }
+
+
+ .note_trash_buton_styling
+ {
+     width: 40px;
+     padding: 10px;
+     cursor: pointer;
+ }
